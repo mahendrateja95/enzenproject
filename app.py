@@ -12,7 +12,7 @@ import io
 app = Flask(__name__, static_folder='static')
 
 # Initialize Azure Blob service client
-connect_str = os.getenv('DefaultEndpointsProtocol=https;AccountName=stdocintellignecedev;AccountKey=VJu3Nzic6CfZpI+OTHDBZ9vxzA8nVIzCrtW72P7mMsPKnAvCOYMIVr9DVBD/LmLPgSWSPEuv9glz+AStkTutTA==;EndpointSuffix=core.windows.net')
+connect_str = os.getenv('')
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
 # Process image function (same as before)
